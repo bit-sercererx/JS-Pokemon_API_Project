@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PokéMystique</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
+    <div id="top-container">
     <!-- NAV SECTION -->
     <nav id="nav-bar">
-        <div id="nav-img"></div>
+        <div id="nav-img-section"><img src="./Assets/logo.png" alt="" id="nav-img"></div>
         <div id="nav-bar-div">
             <ul id="nav-list">
-                <li>Home</li>
-                <li>About Us</li>
+                <li class="nav-list">Home</li>
+                <li class="nav-list"><a href="./about.html" id="about-link">About Us</a></li>
                 <li id="nav-search-bar">Search</li>
             </ul>
         </div>
@@ -22,11 +26,14 @@
     <div id="hero-container">
         <div id="hero-title-section">
             <h1 id="hero-title">Greetings!</h1>
-            <p id="hero-p">Embark on an epic journey at PokéMystique, your go-to hub for all things Pokémon! Explore a diverse collection of characters, types, and regions. Whether you're a seasoned trainer or just starting, our site is your ultimate resource for the charm and excitement of the Pokémon universe. Let the exploration begin!
+            <p id="hero-p">Embark on an epic journey at PokéMystique, your go-to hub for all things Pokémon! Explore a
+                diverse collection of characters, types, and regions. Whether you're a seasoned trainer or just
+                starting, our site is your ultimate resource for the charm and excitement of the Pokémon universe. Let
+                the exploration begin!
             </p>
         </div>
-        <div id="hero-img">
-            <img>
+        <div id="hero-img-section">
+            <img src="./Assets/umbreon1.png" alt="" id="hero-img">
         </div>
     </div>
     <!-- HERLO SECTION -->
@@ -34,89 +41,93 @@
     <div id="main-container">
         <!-- MOST VIEWED SECTION -->
         <div id="most-viewed-section">
-            <div id="most-viewed-title">
-                <h3>
+            <div>
+                <h3 id="most-viewed-title">
                     Most Viewed
                 </h3>
             </div>
             <div id="most-viewed-cards">
                 <div class="most-viewed-card">
-                    <div>
-                        <img class="most-viewed-img">
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="most-viewed-card">
-                    <div>
-                        <img class="most-viewed-img">
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                </div>
-                <div class="most-viewed-card">
-                <div>
-                    <img class="most-viewed-img">
-                </div>
-                <div>
-                    <p></p>
-                </div>
-            </div>
-            <div class="most-viewed-card">
-                <div>
-                    <img class="most-viewed-img">
-                </div>
-                <div>
-                    <p></p>
-                </div>
-            </div>
-            <div class="most-viewed-card">
-                <div>
-                    <img class="most-viewed-img">
-                    <p class="most-viewed-title"></p>
-                </div>
-                <div>
-                    <img src="" alt="">
                     
+                        <img class="most-viewed-img" src="./Assets/latest.png">
+                    
+                    <div>
+                        <p>Pidgey</p>
+                    </div>
+                </div>
+                <div class="most-viewed-card">
+                    
+                        <img class="most-viewed-img" src="./Assets/catbat.png">
+                    
+                    <div>
+                        <p>Caterpie</p>
+                    </div>
+                </div>
+                <div class="most-viewed-card">
+                    
+                        <img class="most-viewed-img" src="./Assets/green.png">
+                    
+                    <div>
+                        <p>Bulbasaur</p>
+                    </div>
+                </div>
+                <div class="most-viewed-card">
+                    
+                        <img class="most-viewed-img" src="./Assets/015.png">
+                    
+                    <div>
+                        <p>Beedrill</p>
+                    </div>
+                </div>
+                <div class="most-viewed-card">
+                    
+                        <img class="most-viewed-img" src="./Assets/squirtle-logo-0E4AE193EE-seeklogo.png">
+                        <p class="most-viewed-title">Squirtle</p>
+                    
+                    <div>
+                        <img src="" alt="">
+
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- MOST VIEWED SECTION -->
+        <!-- POKEMON CHARACTERS -->
+        <div id="characters-section" >
+            <h3 id="characters-title">Pokémon characters</h3>
         </div>
-    <!-- MOST VIEWED SECTION -->
-    <!-- POKEMON CHARACTERS -->
-    <div id="characters-title">
-        <h3>Pokémon characters</h3>
-    </div>
-    <div id="characters-card">
-        <div class="characters-cards">
-            <div id="characters-cards-img"></div>
-            <div id="characters-cards-description">
-                <p></p>
-                <br>
-                <p></p>
+        <div id="characters-card">
+            <div class="characters-cards">
+                <div id="characters-cards-img"></div>
+                <div id="characters-cards-description">
+                    <p></p>
+                    <br>
+                    <p></p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- POKEMON CHARACTERS -->
+        <!-- POKEMON CHARACTERS -->
     </div>
     <!-- MAIN SECTION -->
+</div>
     <footer>
-        <div id="footer-bar">
-            <ul>
-                <ls>Home</ls>
-                <ls>News</ls>
-                <ls>About</ls>
+        <div >
+            <ul id="footer-bar">
+                <ls class="footer-list">Home</ls>
+                <ls class="footer-list">News</ls>
+                <ls id="about-list">About</ls>
             </ul>
         </div>
-        <div id="footer-p">
-            <p>The information presented on this website, including images and text, is intellectual property of The Pokémon Company, Nintendo, Game Freak, Creatures and/or Wizards of the Coast. PokéMystique is not produced by, endorsed by, supported by, or affiliated with any of these companies.
+        <div>
+            <p class="footer-p" >The information presented on this website, including images and text, is intellectual property of The
+                Pokémon Company, Nintendo, Game Freak, Creatures and/or Wizards of the Coast. PokéMystique is not
+                produced by, endorsed by, supported by, or affiliated with any of these companies.
             </p>
             <br>
-            <p>Copyright © 2022 - 2024 PokéMystique</p>
+            <p class="footer-p">Copyright © 2022 - 2024 PokéMystique</p>
         </div>
     </footer>
 
 </body>
+
 </html>
