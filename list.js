@@ -7,20 +7,32 @@ async function getPokemonList() {
     console.log(error);
   }
 }
-// console.log(getPokemonList()); 
 
-const pokemonsContainer=document.getElementById("characters-card")
-const pokemonsImg=document.getElementById("characters-cards-img")
-const pokemonName=document.getElementById("characters-card-name")
-const pokemonP=document.getElementById("characters-card-p")
+// console.log(getPokemonList());
+
+const pokemonsContainer = document.getElementById("characters-card");
+const pokemonsImg = document.getElementById("characters-cards-img");
+// const pokemonName = document.getElementById("characters-card-name");
+const pokemonP = document.getElementById("characters-card-p");
+
 async function displayPokemon() {
-    const pokemons=getPokemonList()
+  const pokemons = await getPokemonList();
+  pokemons.forEach((pokemon) => {
+    const cardContainer = document.createElement("div");
+    cardContainer.className = "card-container";
+    const pokemonName = document.createElement("p");
+    const pokemonType = document.createElement("p");
+    pokemonType.className = "card-Type";
+    pokemonName.className = "card-p";
+    pokemonName.textContent = pokemon.name;
 
-    pokemons.forEach((pokemon)=>{
-        
-        pokemonName.textContent=pokemon.name
+    pokemonsContainer.appendChild(cardContainer);
+    cardContainer.appendChild(pokemonName);
+
+    cardContainer.addEventListener("click", () => {
+      window.location.href = `./details-list.html?name=${pokemon.name}`;
     });
-    pokemonsContainer.appendChild(pokemonName)
-    console.log(displayPokemon());
-
+  });
 }
+
+displayPokemon();
