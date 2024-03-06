@@ -1,0 +1,23 @@
+
+:root {
+    --primary: #465456;
+    --secondary: rgb(236, 213, 139, 51%);
+  }
+  #top-container {
+    padding: 0px 40px;
+  }
+  /* NAV SECTION */
+  .nav-bar-section{
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav-bar-img {
+    width: 50px;
+  }
+  #nav-bar-list-section {
+    display: flex;
+    list-style: none;
+    gap: 90px;
+  }
+  /* NAV SECTION */
+  
