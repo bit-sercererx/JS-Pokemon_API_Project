@@ -1,4 +1,5 @@
-#top-container{padding: 0px 40px;}
+#top-container{padding: 0px 40px;
+}
 body{margin: 0px;
 
 }
@@ -78,6 +79,8 @@ ul {
 #most-viewed-cards{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
 }
 .most-viewed-card{
@@ -118,6 +121,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  
 
 }
 p{font-size: 25px;
@@ -139,6 +143,98 @@ padding-top: 35px;
 
 .footer-p{padding-left: 30px; color: #959595;}
 #about-list{font-weight: lighter;}
+
+@media screen and (min-width:375px) {
+  #hero-img{ display: none;}
+
+  #nav-list {
+    display: flex;
+    gap: 20px;
+  }
+  ul {
+    list-style: none;
+    color: var(--primary);
+    font-weight:bold;
+    font-size: 12px;
+  }
+
+  #nav-search-bar {
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+    height: 10px;
+  }
+  #hero-title-section {
+    width: 600px;
+    height: 455px;
+    background-color: var(--secondary);
+    border-radius: 10px
+    ;
+    
+  }
+
+  #hero-title{font-size: 50px;
+  } 
+
+  #hero-p {
+    font-size: 20px;
+    color: var(--primary);
+    padding: 0px 30px;
+    
+    
+  }
+  #most-viewed-title {
+    font-weight:bold;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+
+    
+  }
+
+  .most-viewed-card{
+    background-color: var(--secondary);
+    width: 300px;
+    height:150px ;
+    border-radius: 10px;
+     
+    margin: auto;
+    margin-bottom:15px ;
+    justify-content: center;
+    
+  }
+
+  #characters-title{
+    padding-left: 10px;
+    font-size: 20px;
+  }
+
+  .footer-p{padding:0px 30px; color: #959595;
+  font-size: 10px;}
+
+  footer{
+    background-color: var(--primary);
+    padding: 0px 10px;
+    padding-bottom: 20px;
+   margin: 0px;
+    
+  }
+  #characters-card{
+  
+    background-color: var(--secondary);
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    margin: auto;
+  }
+
+
+  
+}
 
 
 
