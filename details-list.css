@@ -41,7 +41,6 @@ body {
   font-size: 70px;
   color: var(--primary);
   padding-bottom: 20px;
-
 }
 
 .main-container {
@@ -128,3 +127,39 @@ footer {
 #about-list {
   font-weight: lighter;
 }
+
+@media (max-width: 767px) {
+  .nav-bar-list {
+    font-size: 10px;
+  }
+  #searc-navbar {
+    font-size: 10px;
+  }
+  .main-container {
+    background-color: rgba(236, 213, 139, 0.258);
+    width: 700px;
+    height: 453px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .foter-p{font-size: 10px;}
+}
+/* 
+@media(min-width:768px){
+  .main-container {
+    background-color: rgba(236, 213, 139, 0.258);
+    width: 700px;
+    height: 453px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+}
+@media(max-width:992px){
+
+}
+@media(max-width:1000px){} */

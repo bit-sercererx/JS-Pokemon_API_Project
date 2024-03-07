@@ -20,9 +20,10 @@
             <div id="nav-img-section"><img src="./Assets/logo.png" alt="" id="nav-img"></div>
             <div id="nav-bar-div">
                 <ul id="nav-list">
-                    <li class="nav-list">Home</li>
-                    <li class="nav-list"><a href="./about.html" id="about-link">About Us</a></li>
-                    <li id="nav-search-bar">Search</li>
+                    <li class="nav-list" id="nav-bar-home">Home</li>
+                    <li class="nav-list" id="nav-bar-about"><a href="./about.html" id="about-link">About Us</a></li>
+                    <input type="text" id="input-search"> <button id="pokemon-search">Go</button>
+                    <li><button id="nav-search-bar">search</button></li>
                 </ul>
             </div>
         </nav>
@@ -33,7 +34,7 @@
                 <h1 id="hero-title">Greetings!</h1>
                 <p id="hero-p">Embark on an epic journey at PokéMystique, your go-to hub for all things Pokémon! Explore
                     a
-                    diverse collection of characters, types, and regions. Whether you're a seasoned trainer or just
+                    diverse collection of characters, types, and regions.  Whether you're a seasoned trainer or just
                     starting, our site is your ultimate resource for the charm and excitement of the Pokémon universe.
                     Let
                     the exploration begin!
@@ -58,7 +59,7 @@
 
                         <img class="most-viewed-img" src="./Assets/latest.png">
 
-                        <div>
+                        <div id="pidgey">
                             <p>Pidgey</p>
                         </div>
                     </div>
@@ -67,7 +68,7 @@
                         <img class="most-viewed-img" src="./Assets/catbat.png">
 
                         <div>
-                            <p>Caterpie</p>
+                            <p id="caterpie">Caterpie</p>
                         </div>
                     </div>
                     <div class="most-viewed-card">
@@ -75,7 +76,7 @@
                         <img class="most-viewed-img" src="./Assets/green.png">
 
                         <div>
-                            <p>Bulbasaur</p>
+                            <p id="bulbasaur">Bulbasaur</p>
                         </div>
                     </div>
                     <div class="most-viewed-card">
@@ -83,13 +84,13 @@
                         <img class="most-viewed-img" src="./Assets/015.png">
 
                         <div>
-                            <p>Beedrill</p>
+                            <p id="beedrill">Beedrill</p>
                         </div>
                     </div>
                     <div class="most-viewed-card">
 
                         <img class="most-viewed-img" src="./Assets/squirtle-logo-0E4AE193EE-seeklogo.png">
-                        <p class="most-viewed-title">Squirtle</p>
+                        <p class="most-viewed-title" id="squirtle">Squirtle</p>
 
                         <div>
                             <img src="" alt="">
@@ -105,17 +106,17 @@
             </div>
             <div id="characters-card">
                 <!-- <div class="characters-cards"> -->
-                    <!-- <div id="characters-cards-img"></div>
+                <!-- <div id="characters-cards-img"></div>
                     <div id="characters-cards-description">
                         <p id="characters-card-name"></p>
                         <br>
                         <p id="characters-card-p"></p> -->
-                    </div>
-                </div>
             </div>
-            <!-- POKEMON CHARACTERS -->
         </div>
-        <!-- MAIN SECTION -->
+    </div>
+    <!-- POKEMON CHARACTERS -->
+    </div>
+    <!-- MAIN SECTION -->
     </div>
     <footer>
         <div>
@@ -128,7 +129,7 @@
         <div>
             <p class="footer-p">The information presented on this website, including images and text, is intellectual
                 property of The
-                Pokémon Company, Nintendo, Game Freak, Creatures and/or Wizards of the Coast. PokéMystique is not
+                Pokémon Company, Nintendo, Game Freak, Creatures and/or Wizards of the Coast. <br> PokéMystique is not
                 produced by, endorsed by, supported by, or affiliated with any of these companies.
             </p>
             <br>
@@ -137,6 +138,8 @@
     </footer>
 
     <script src="./list.js"></script>
+    <script src="./most-viewed.js"></script>
+
 
 </body>
 
