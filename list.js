@@ -8,8 +8,6 @@ async function getPokemonList() {
   }
 }
 
-// console.log(getPokemonList());
-
 const pokemonsContainer = document.getElementById("characters-card");
 const pokemonsImg = document.getElementById("characters-cards-img");
 // const pokemonName = document.getElementById("characters-card-name");
