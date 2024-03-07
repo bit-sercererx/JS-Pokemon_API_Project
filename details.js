@@ -27,21 +27,23 @@ async function displayPokemonDetails() {
   pokemonName.textContent = data.name;
   height.textContent += data.height;
   imgSprite.src = data.sprites.front_default;
-  data.types.forEach(
-    (type, index) => {
-      if (index == 0) {
-        types.textContent += type.type.name;
-      } else {
-        types.textContent += " | " + type.type.name;
-      }
-    },
-    data.ability.forEach((abilities, index) => {
-      if (index == 0) {
-        ability.textContent += abilities.ability.name;
-      } else {
-        ability.textContent += " | " + abilities.ability.name;
-      }
-    })
-  );
+  data.types.forEach((type, index) => {
+    if (index == 0) {
+      types.textContent += type.type.name;
+    } else {
+      types.textContent += " | " + type.type.name;
+    }
+  });
+
+  // data.abilities.forEach((abilities, index) => {
+  //   if (index == 0) {
+  //     ability.innerHTML+=`<div> ${abilities.ability.name}</div>`
+  //   } else {
+  //     ability.innerHTML+=`<div> ${abilities.ability.name} </div> `
+  //   }
+  // });
+  data.stats.forEach((stat) => {
+    hp.innerHTML += `<div>${stat.stat.name} ${stat.base_stat}</div>`;
+  })
 }
 displayPokemonDetails();

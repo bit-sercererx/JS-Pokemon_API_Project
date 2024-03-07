@@ -180,7 +180,8 @@ footer {
   border-radius: 10px;
 }
 
-@media(max-width: 767px) {
+
+/* @media(max-width: 767px) {
   #hero-img {
     display: none;
   }
@@ -355,4 +356,4 @@ footer {
 @media(min-width:992px){
   
 }
-
+ */
