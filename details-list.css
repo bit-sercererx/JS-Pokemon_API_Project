@@ -42,6 +42,12 @@ body {
   color: var(--primary);
   padding-bottom: 20px;
 }
+#main-title{
+text-align: center;
+font-size: 70px; 
+color: #465456;
+text-transform: capitalize;
+margin: 0px;}
 
 .main-container {
   background-color: rgba(236, 213, 139, 0.258);
@@ -70,7 +76,7 @@ img {
   font-size: 20px;
   font-weight: bold;
   border-right: 2px solid var(--primary);
-  padding-right: 70px;
+  padding: 0px 70px;
   margin: 0px;
   color: var(--primary);
 }
@@ -78,7 +84,7 @@ img {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  padding-right: 90px;
+  padding: 0px 70px;
   margin: 0px;
   font-weight: bold;
   color: var(--primary);
@@ -143,7 +149,9 @@ footer {
     display: flex;
     align-items: center;
   }
-  .foter-p{font-size: 10px;}
+  .foter-p {
+    font-size: 10px;
+  }
 }
 /* 
 @media(min-width:768px){

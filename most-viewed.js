@@ -29,9 +29,6 @@ caterpieid.addEventListener("click", () => {
 beedrillid.addEventListener("click", () => {
   window.location.href = `./details-list.html?name=beedrill`;
 });
-squirtleid.addEventListener("click", () => {
-  window.location.href = `./details-list.html?name=squirtle`;
-});
 
 const searchButoon = document.getElementById("nav-search-bar");
 const searchInbut = document.getElementById("input-search");
@@ -46,24 +43,23 @@ function searchAdd() {
       pokemonSearch.style.display = "block";
       navBarAbout.style.display = "none";
       navBarHome.style.display = "none";
-      searchButoon.style.background="white"
-      searchButoon.style.color="#465456"
+      searchButoon.style.background = "white";
+      searchButoon.style.color = "#465456";
     } else {
       searchInbut.style.display = "none";
       navBarAbout.style.display = "block";
       navBarHome.style.display = "block";
       pokemonSearch.style.display = "none";
-      searchButoon.style.background="#465446"
-      searchButoon.style.color="white"
+      searchButoon.style.background = "#465446";
+      searchButoon.style.color = "white";
     }
   });
 }
 
 searchAdd();
 
-pokemonSearch.addEventListener("click",()=>{
-  const inputSearch=searchInbut.value
+pokemonSearch.addEventListener("click", () => {
+  const inputSearch = searchInbut.value;
 
-  window.location.href = `./details-list.html?name=${inputSearch}`
-
-})
+  window.location.href = `./details-list.html?name=${inputSearch}`;
+});

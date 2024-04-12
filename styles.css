@@ -9,7 +9,6 @@ body {
 :root {
   --primary: #465456;
   --secondary: rgb(236, 213, 139, 51%);
-  
 }
 #input-search {
   display: none;
@@ -179,7 +178,22 @@ footer {
   background-color: var(--secondary);
   border-radius: 10px;
 }
-
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.card-p{
+  text-transform: uppercase;
+}
+.card-img{width: 70%;}
+#most-viewed-cards :hover{
+  background-color: #465456;
+  color: aliceblue;
+}
 
 /* @media(max-width: 767px) {
   #hero-img {
