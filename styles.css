@@ -16,6 +16,7 @@ body {
 }
 #pokemon-search {
   display: none;
+  cursor: pointer;
 
   background: var(--primary);
   color: white;
@@ -44,6 +45,7 @@ body {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 #nav-list {
@@ -178,21 +180,32 @@ footer {
   background-color: var(--secondary);
   border-radius: 10px;
 }
+
+.card-container :hover {
+  background-color: #465456;
+  color: aliceblue;
+  cursor: pointer;
+}
+
 .pokemon-card {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-.card-p{
+
+.pokemon-card .card-p {
   text-transform: uppercase;
 }
-.card-img{width: 70%;}
-#most-viewed-cards :hover{
+.card-img {
+  width: 70%;
+}
+#most-viewed-cards :hover {
   background-color: #465456;
   color: aliceblue;
+  cursor: pointer;
 }
 
 /* @media(max-width: 767px) {
